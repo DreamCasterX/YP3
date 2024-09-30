@@ -74,8 +74,10 @@ if __name__ == "__main__":
     if not check_ffmpeg():
         install_ffmpeg_instructions()
     else:
-        youtube_urls = input("請輸入YouTube影片網址（多個網址請用空格分隔）: ").split()
+        youtube_urls = input("請輸入YouTube影片網址（多個網址請用空格分隔）: \n").split()
         for url in youtube_urls:
             print(f"\n正在處理: {url}")
             download_youtube_audio(url)
+            
+print("\n(按Enter結束)")
 input()            
