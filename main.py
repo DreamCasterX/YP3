@@ -4,7 +4,7 @@ import subprocess
 import sys
 from tqdm import tqdm
 
-# ANSI 顏色代碼
+# ANSI color code
 GREEN = '\033[92m'
 RED = '\033[91m'
 RESET = '\033[0m'
@@ -20,11 +20,11 @@ def install_ffmpeg_instructions():
     print("請先安裝 ffmpeg 才能繼續操作。")
     print("安裝說明：")
     if sys.platform.startswith('win'):
-        print("Windows: 使用 Chocolatey 安裝，執行命令：choco install ffmpeg")
+        print("Windows: 使用 Winget 安裝，執行命令：winget install --id=Gyan.FFmpeg -e")
     elif sys.platform.startswith('darwin'):
         print("macOS: 使用 Homebrew 安裝，執行命令：brew install ffmpeg")
     elif sys.platform.startswith('linux'):
-        print("Linux: 使用包管理器安裝，例如 Ubuntu 執行命令：sudo apt-get install ffmpeg")
+        print("Linux: 使用包管理器安裝，例如 Ubuntu 執行命令：sudo apt install ffmpeg")
     print("安裝完成後，請重新運行此程式。")
 
 def progress_hook(d):
