@@ -10,4 +10,4 @@ requests==2.32.3
 tqdm==4.66.5
 urllib3==2.2.3
 websockets==13.1
-yt-dlp==2024.9.27
+yt-dlp==2025.3.31
